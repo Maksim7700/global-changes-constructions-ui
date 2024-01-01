@@ -1,38 +1,213 @@
-.App {
-  text-align: center;
+.container {
+  max-width: 1378px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* header start */
+
+.main {
+  flex-shrink: 0;
+  height: 78px;
+  background: #FFF;
+  box-shadow: 0px 0px 10px 0px rgba(157, 157, 157, 0.15);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
+  align-items: center;
   display: flex;
-  flex-direction: column;
+  height: inherit;
+  justify-content: space-between;
+}
+
+.nav-left, .nav-right {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-left {
+  gap: 63px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.nav-right {
+  gap: 53px;
+}
+
+.nav-logo img{
+  width: 135px;
+  height: 57px;
+  flex-shrink: 0;
+}
+
+.nav-items {
+  display: flex;
+  gap: 64px;
+}
+
+.nav-items a {
+  font-family: 'Montserrat', sans-serif;
+  font-feature-settings: 'clig' off, 'liga' off;
+  text-decoration: none;
+  color: #282828;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+}
+
+.nav-right button {
+  border: 0;
+  cursor: pointer;
+  width: 164px;
+  height: 48px;
+  flex-shrink: 0;
+  color: #FFF;
+  background: #141318;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+.nav-right div {
+  color: #282828;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+/* header end */
+
+/* Main */
+.main-content {
+  background: #FFF;
+  margin-top: 100px;
+}
+
+
+.title-content {
+  display: flex;
+}
+
+.title {
+  width: 685px;
+  color: #282828;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.title-logo {
+  position: relative;
+  top: 20px;
+  right: 88px;
+}
+
+/* SlideComponent */
+
+.side-component {
+  margin-top: -38px;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-switch {
+  margin-bottom: 12px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.slide-count {
+  color: #282828;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'Input Sans', sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 72.8px */
+}
+
+.slide-slash {
+  color: #282828;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'Input Sans', sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 36.4px */
+}
+
+.slide-size {
+  color: #282828;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'Input Sans', sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 72.8px */
+}
+
+.slide-left-arrow, .slide-right-arrow {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slide-left-arrow{
+  margin-right: 24px;
+}
+
+.slide-right-arrow{
+  margin-left: 24px;
+}
+
+.side-image img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Statistic */
+
+.statistic {
+  background: url('../public/black-lines.svg') center/cover no-repeat;
+  background-color: #141318;
+  flex-shrink: 0;
+  margin-top: -301px;
+  height: 1126px;
+  flex-shrink: 0;
+}
+
+
+
+
+@media (max-width: 1410px) {
+  .container {
+      margin: 0 16px !important;
   }
 }
