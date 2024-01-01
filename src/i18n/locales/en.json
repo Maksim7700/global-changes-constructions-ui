@@ -7,5 +7,43 @@
   },
   "main": {
     "title": "Global Changes Construction LTD"
+  },
+  "stats": {
+    "aboutUs": "Specialising in high-end projects - new builds, building extensions, renovations, loft conversions and home improvements. We work with the highest quality products to ensure that we provide the best results for our clients",
+    "button": "Contact Us",
+    "stats": {
+      "one": {
+        "value" : 1,
+        "text": "Years In Theindustry"
+      },
+      "two": {
+        "value" : 3,
+        "text": "years in theindustry"
+      },
+      "three": {
+        "value" : "61K+ m2",
+        "text": "Built Area"
+      },
+      "four": {
+        "value" : 23,
+        "text": "Completed Projects"
+      },
+      "five": {
+        "value" : "400+",
+        "text": "Satisfiedcustomers"
+      }
+    }
+  },
+  "aboutUs": {
+    "title": "About Us:",
+    "page1": {
+      "title": "Our Mission",
+      "text": "Our mission is to create more than just apartments; we aim to craft spaces where every detail reflects your style and comfort. We believe your living space should be more than just a place to reside – it should be where you truly feel at home. Our team invests all our energy and professional skills to provide you with housing that aligns with your unique needs and desires"
+    },
+    "page2": {
+      "title": "Our Experience",
+      "text": "With years of experience in construction and renovation, we take pride in every project we successfully complete. Our experts are a team of talented and qualified professionals always ready to tackle the most challenging tasks. We believe our experience is the key to your peaceful and comfortable living"
+    }
+
   }
 }
