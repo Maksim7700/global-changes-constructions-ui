@@ -44,6 +44,51 @@
       "title": "Our Experience",
       "text": "With years of experience in construction and renovation, we take pride in every project we successfully complete. Our experts are a team of talented and qualified professionals always ready to tackle the most challenging tasks. We believe our experience is the key to your peaceful and comfortable living"
     }
-
+  },
+  "workProcess": {
+    "title": "Work Process",
+    "1": {
+      "step": "01",
+      "title": "Consultation and Analysis",
+      "description": "Receive individual consultation and in-depth analysis to uncover the potential of your project"
+    },
+    "2": {
+      "step": "02",
+      "title": "Design and Conceptualization",
+      "description": "Collaborative creativity transforms your vision into bespoke designs, reflecting your unique style"
+    },
+    "3": {
+      "step": "03",
+      "title": "Execution and Construction",
+      "description": "High-quality execution and efficient construction at every stage of the process"
+    },
+    "4": {
+      "step": "04",
+      "title": "Completion and Satisfaction",
+      "description": "Quality check, your approval, and enjoyment of the new, perfected space"
+    },
+    "action": {
+      "title": "Our Projects in Action",
+      "description": "Explore the ambiance of our top projects in this captivating video overview. From unique ideas to realization, our video showcases how we create a space distinguished by elegance and style. Immerse yourself in the world of our works and feel how your ideal home becomes a reality"
+    },
+    "monitoring": {
+      "title": "24/7",
+      "description": "24/7 monitoring of the construction activities"
+    }
+  },
+  "form": {
+    "title" : "Have any questions, remarks, or propositions?",
+    "description": "Interested in becoming our next partner or investor and seeking more details? Please, fill out the form or connect with us in whichever way you prefer",
+    "form": {
+      "checkbox": "By pressing this button you agree to our Privacy Policy"
+    }
+  },
+  "footer": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "workProcess": "Work Process",
+    "contactUs": "Contact Us",
+    "privacyPolicy": "Privacy policy",
+    "termsOfUse": "Terms of Use"
   }
 }
