@@ -1,9 +1,12 @@
+import { useState } from 'react';
 import Container from './default/Container';
 import { useTranslation } from 'react-i18next';
 
 const Form = () => {
 
   const { t } = useTranslation();
+
+  const [checked , setChecked] = useState(false);
 
   return (
     <div className='form'>
@@ -30,11 +33,13 @@ const Form = () => {
         </div>
 
         <div className="form-group-checkbox">
-          <input type="checkbox" id="checkbox" name="rules" required />
+          <input checked={checked} onChange={evt => setChecked(evt.target.checked)} type="checkbox" id="checkbox" name="rules" required />
             <label htmlFor="checkbox">{t('form.form.checkbox')}</label>
         </div>
         <div className='button-submit'>
-        <button type="submit">Submit</button>
+        <button style={{
+          cursor: !checked ? 'not-allowed' : 'auto'
+        }}disabled={!checked} type="submit">Send</button>
         </div>
     </form>
 </div></div>

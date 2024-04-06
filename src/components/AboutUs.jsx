@@ -8,7 +8,7 @@ const AboutUs = () => {
     <div className='aboutUs'>
       <Container>
         <div className='about-us-title'>{t('aboutUs.title')}</div>
-        <div className='page-containter'>
+        <div className='page-container'>
           <div className='page'>
             <div className='page1'><img src="./page1.png" alt="Description" loading="lazy" /></div>
             <div className='page-box'>

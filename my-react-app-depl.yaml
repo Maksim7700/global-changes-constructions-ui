@@ -1,0 +1,30 @@
+appVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-react-app-depl
+spec:
+  selector:
+    matchLabels:
+      app: global-changes-construction
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: global-changes-construction
+    spec:
+      containers:
+      - name: global-changes-construction
+        image: global-changes-construction
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: global-changes-construction-service
+spec:
+  type: NodePort
+  selector:
+    app: global-changes-construction
+  ports:
+    - name: my-app
+      port: 3000
+      targetPort: 3000
