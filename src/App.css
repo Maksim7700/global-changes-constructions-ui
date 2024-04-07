@@ -831,7 +831,7 @@ text-align: left;
 .page-container .page:nth-child(2) {
   display: flex;
   flex-direction: column-reverse;
-  gap: 24px;
+  gap: 24px !important;
 }
 
 .page-container {
