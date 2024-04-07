@@ -759,6 +759,15 @@ hr {
     flex-direction: column;
   }
 
+
+  .page-container > .page:nth-child(1) {
+    grid-template-columns: 1fr
+  }
+
+  .page-container > .page:nth-child(2) {
+    grid-template-columns: 1fr
+  }
+
   .about-us-title {
 font-size: 32px;
 font-weight: 500;
@@ -829,9 +838,14 @@ text-align: left;
 }
 
 .page-container > .page:nth-child(2) {
-  display: flex;
-  flex-direction: column-reverse;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 24px !important;
+}
+
+.page-container > .page:nth-child(2) div:first-child
+{
+  order: 2;
 }
 
 .page-container {
@@ -927,6 +941,10 @@ text-align: left;
   line-height: 34.13px;
   letter-spacing: 0.02em;
   text-align: left;
+}
+.page-box {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .page-box > div:nth-child(1){

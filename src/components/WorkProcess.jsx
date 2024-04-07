@@ -41,7 +41,7 @@ const WorkProcess = () => {
             </div>
           </div>
           <div className='work-process-project-in-action-video'>
-          <iframe width="1175" height="661" src="https://www.youtube.com/embed/jhak5jvO-ro" title="OTBx Air - Construction Promo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="1175" height="661" src="https://www.youtube.com/embed/jhak5jvO-ro" title="OTBx Air - Construction Promo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </div>
         </div>
       </Container>
