@@ -13,23 +13,23 @@
     "button": "Contact Us",
     "stats": {
       "one": {
-        "value" : 1,
+        "value": 1,
         "text": "Years In Theindustry"
       },
       "two": {
-        "value" : 3,
+        "value": 3,
         "text": "years in theindustry"
       },
       "three": {
-        "value" : "61K+ₘ₂",
+        "value": "61K+ₘ₂",
         "text": "Built Area"
       },
       "four": {
-        "value" : 23,
+        "value": 23,
         "text": "Completed Projects"
       },
       "five": {
-        "value" : "400+",
+        "value": "400+",
         "text": "Satisfiedcustomers"
       }
     }
@@ -77,7 +77,7 @@
     }
   },
   "form": {
-    "title" : "Have any questions, remarks, or propositions?",
+    "title": "Have any questions, remarks, or propositions?",
     "description": "Interested in becoming our next partner or investor and seeking more details? Please, fill out the form or connect with us in whichever way you prefer",
     "form": {
       "checkbox": "By pressing this button you agree to our Privacy Policy"

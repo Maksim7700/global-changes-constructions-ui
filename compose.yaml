@@ -11,7 +11,7 @@ version: '3.8'
 services:
   server:
     build:
-      context: .
+      context: /qa
     environment:
       NODE_ENV: production
     ports:

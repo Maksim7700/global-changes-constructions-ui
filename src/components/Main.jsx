@@ -7,17 +7,17 @@ import Statistic from './Statistic';
 import WorkProcess from './WorkProcess';
 
 const Main = () => {
-  return (
-    <>
-      <Header />
-      <MainContent />
-      <Statistic />
-      <AboutUs />
-      <WorkProcess />
-      <Form />
-      <Footer />
-    </>
-  )
+    return (
+        <>
+            <Header/>
+            <MainContent/>
+            <Statistic/>
+            <AboutUs/>
+            <WorkProcess/>
+            <Form/>
+            <Footer/>
+        </>
+    )
 }
 
 export default Main;
