@@ -822,13 +822,13 @@ text-align: left;
   text-align: left;
 }
 
-.page-container .page:nth-child(1) {
+.page-container > .page:nth-child(1) {
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
 }
 
-.page-container .page:nth-child(2) {
+.page-container > .page:nth-child(2) {
   display: flex;
   flex-direction: column-reverse;
   gap: 24px !important;
