@@ -973,6 +973,9 @@ text-align: left;
 .develop-by {
   justify-content: left;
 }
+.work-process-steps {
+  grid-template-columns: 1fr;
+}
 
   .nav-items , .nav-right div{
     background-color: black;
