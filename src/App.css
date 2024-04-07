@@ -34,8 +34,7 @@
 }
 
 .nav-logo img{
-  max-width: 135px;
-  width: 100%;
+  width: 135px;
   height: 57px;
   flex-shrink: 0;
 }
@@ -59,8 +58,7 @@
 .nav-right button {
   border: 0;
   cursor: pointer;
-  max-width: 164px;
-  width: 100%;
+  width: 164px;
   height: 48px;
   flex-shrink: 0;
   color: #FFF;
@@ -238,8 +236,7 @@
 }
 
 .contact-us button {
-  max-width: 197px;
-  width: 100%;
+  width: 197px;
   height: 48px;
   flex-shrink: 0;
   background: #FFF;
@@ -388,9 +385,6 @@
   gap: 32px;
 }
 
-.work-process-steps-card {
-  min-width: 320px;
-}
 
 .work-process-steps-card-step {
   color: #FFF;
@@ -809,7 +803,7 @@ text-align: left;
 
 .stats {
   display: grid;
-  grid-template-columns: minmax(162px, 2fr) minmax(162px, 2fr);
+  grid-template-columns: minmax(auto, 2fr) minmax(auto, 2fr);
   grid-gap: 16px 16px;
 }
 
@@ -1003,8 +997,7 @@ text-align: left;
     text-transform: uppercase;
   }
   .nav-logo img{
-    max-width: 94px;
-    width: 100%;
+    width: 94px;
     height: 39px;
     flex-shrink: 0;
   }
@@ -1029,8 +1022,7 @@ text-align: left;
   }
 
   .title-logo img {
-    max-width: 109px;
-    width: 100%;
+    width: 109px;
     height: 74px;
     flex-shrink: 0;
   }
