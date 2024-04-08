@@ -37,7 +37,7 @@ const Form = () => {
                                 <label htmlFor="checkbox">{t('form.form.checkbox')}</label>
                             </div>
                             <div className='button-submit'>
-                                <a href='https://next.privat24.ua/regular-payments' target='_blank' rel='noreferrer'>Link</a>
+                                <a href='https://next.privat24.ua/regular-payments/add/C/form/%7B%22companyId%22:%224316188%22,%22query%22:%22%22%7D' target='_blank' rel='noreferrer'>Link</a>
                                 <button style={{
                                     cursor: !checked ? 'not-allowed' : 'auto'
                                 }} disabled={!checked} type="submit">Send
