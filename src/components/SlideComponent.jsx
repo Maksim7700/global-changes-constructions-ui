@@ -50,23 +50,23 @@ const SlideComponent = () => {
     return (
         <div className='side-component'>
             <div className='side-switch'>
-                <div className='slide-left-arrow' onClick={() => decrease()}>
+                <button className='slide-left-arrow' onClick={() => decrease()}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="33" height="27" viewBox="0 0 33 27" fill="none">
                         <path d="M14 2L2 13.5L14 25" stroke={leftArrow} strokeWidth="1.5" strokeLinecap="square"/>
                         <path d="M32 13.5H8" stroke={leftArrow} strokeWidth="1.5" strokeLinecap="square"/>
                     </svg>
-                </div>
+                </button>
                 <div className='switch'>
                     <div className='slide-count'>{count}</div>
                     <div className='slide-slash'> /</div>
                     <div className='slide-size'>{size}</div>
                 </div>
-                <div className='slide-right-arrow' onClick={() => increase()}>
+                <button className='slide-right-arrow' onClick={() => increase()}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="33" height="27" viewBox="0 0 33 27" fill="none">
                         <path d="M19 2L31 13.5L19 25" stroke={rightArrow} strokeWidth="1.5" strokeLinecap="square"/>
                         <path d="M1 13.5H25" stroke={rightArrow} strokeWidth="1.5" strokeLinecap="square"/>
                     </svg>
-                </div>
+                </button>
             </div>
             <div className='side-image'>
                 <img src={`./slide-img-${count}.png`} alt="Description" loading="lazy"/>

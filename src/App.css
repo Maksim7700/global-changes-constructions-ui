@@ -2,6 +2,11 @@
 .container {
     max-width: 1378px;
     margin: 0 auto;
+    letter-spacing: 0.02em;
+}
+
+.button {
+    border: none;
 }
 
 /* header start */
@@ -53,13 +58,14 @@
 }
 
 .nav-items a {
+    cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     font-feature-settings: 'clig' off, 'liga' off;
     text-decoration: none;
     color: #282828;
     font-size: 16px;
     font-weight: 400;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
 }
 
 .nav-right button {
@@ -77,7 +83,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
 }
 
@@ -90,7 +96,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,6 +187,9 @@
 }
 
 .slide-left-arrow, .slide-right-arrow {
+    cursor: pointer;
+    border: none;
+    background-color: Transparent;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -239,10 +248,11 @@
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 27px */
-    letter-spacing: 0.36px;
+    letter-spacing: 0.02em;
 }
 
 .contact-us button {
+    cursor: pointer;
     width: 197px;
     height: 48px;
     flex-shrink: 0;
@@ -255,7 +265,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 24px */
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
 }
 
@@ -277,7 +287,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
     text-transform: capitalize;
 }
 
@@ -358,7 +368,18 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    letter-spacing: 0.36px;
+    letter-spacing: 0.02em;
+}
+
+.form-left-description {
+    color: #5D5D5D;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
 }
 
 
@@ -411,7 +432,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 27px */
-    letter-spacing: 0.36px;
+    letter-spacing: 0.02em;
     text-transform: capitalize;
 }
 
@@ -456,7 +477,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    letter-spacing: 1.36px;
+    letter-spacing: 0.02em;
     margin-bottom: 32px;
 }
 
@@ -477,7 +498,7 @@
     color: #FFF;
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: 'Helvetica', Arial, Lucida Grande, sans-serif !important;
+    font-family: 'Input Sans Regular';
     font-size: 48px;
     font-style: normal;
     font-weight: 400;
@@ -488,12 +509,12 @@
     padding-left: 48px;
     color: #DCDCDC;
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
-    letter-spacing: 0.32px; /* SHOULD BE 0.32 */
+    line-height: 150%;
+    letter-spacing: 0.02em;
     text-transform: capitalize;
 }
 
@@ -528,7 +549,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.02em;
     text-transform: capitalize;
 }
 
@@ -539,8 +560,8 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 27px; /* 150% */
-    letter-spacing: 0.36px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
 }
 
 .form-left {
@@ -565,16 +586,22 @@
 }
 
 .first-name, .email {
+    background-color: #F6F6F6;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
     border-top: none;
     border-left: none;
     border-right: none;
+    border-bottom: none;
     padding-top: 10px;
     padding-left: 16px;
     height: 44px;
+    color: black;
+    font-weight: 500;
 }
 
 input[type='email']::placeholder {
-    color: #282828;
+    color: #5D5D5D;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -584,7 +611,7 @@ input[type='email']::placeholder {
 }
 
 input[type='text']::placeholder {
-    color: #282828;
+    color: #5D5D5D;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -599,6 +626,7 @@ input[type='text']::placeholder {
 }
 
 textarea::placeholder {
+    border: 1px solid #E7E7E7;
     color: #5D5D5D;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: 'Montserrat', sans-serif;
@@ -608,19 +636,22 @@ textarea::placeholder {
     line-height: 155%;
 }
 
+
 .description-group {
     display: grid;
 }
 
 .form-description {
+    background-color: #F6F6F6;
+
     height: 110px;
     flex-shrink: 0;
-    color: #5D5D5D;
+    color: black;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 155%;
     padding-top: 16px;
     padding-left: 16px;
@@ -647,10 +678,11 @@ textarea::placeholder {
     font-style: normal;
     font-weight: 400;
     line-height: 27px; /* 168.75% */
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
 }
 
 .button-submit {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -671,7 +703,7 @@ button[type="submit"] {
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 24px */
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
 }
 
@@ -717,7 +749,7 @@ button[type="submit"] {
     font-style: normal;
     font-weight: 400;
     line-height: 27px; /* 192.857% */
-    letter-spacing: 0.28px;
+    letter-spacing: 0.02em;
     text-decoration-line: underline;
 }
 
@@ -736,8 +768,7 @@ button[type="submit"] {
 }
 
 hr {
-    height: 1px;
-    flex-shrink: 0;
+    border: 1px solid #D9D9D9;
 }
 
 
@@ -964,9 +995,10 @@ hr {
     }
 
     .form-left-description {
-        font-size: 16px;
         font-weight: 400;
-        line-height: 24px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
         letter-spacing: 0.02em;
         text-align: left;
     }
@@ -1024,7 +1056,7 @@ hr {
         font-style: normal;
         font-weight: 600;
         line-height: 150%; /* 21px */
-        letter-spacing: 0.28px;
+        letter-spacing: 0.02em;
         text-transform: uppercase;
     }
 

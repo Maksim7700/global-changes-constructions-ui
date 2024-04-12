@@ -16,9 +16,9 @@ const Form = () => {
                         <div className='form-left-title'>{t('form.title')}</div>
                         <div className='form-left-description'>{t('form.description')}</div>
                         <div className='form-left-social'>
-                            <div className='form-left-social-facebook'><img src="./_Facebook.png" alt="Description" loading="lazy"/></div>
-                            <div className='form-left-social-linkedin'><img src="./_Linkedin.png" alt="Description" loading="lazy"/></div>
-                            <div className='form-left-social-instagram'><img src="./instagram.png" alt="Description" loading="lazy"/></div>
+                            <div className='form-left-social-facebook'><img src="./_Facebook.svg" alt="Description" loading="lazy"/></div>
+                            <div className='form-left-social-linkedin'><img src="./_Linkedin.svg" alt="Description" loading="lazy"/></div>
+                            <div className='form-left-social-instagram'><img src="./instagram.svg" alt="Description" loading="lazy"/></div>
                         </div>
                     </div>
                     <div>
@@ -38,7 +38,7 @@ const Form = () => {
                             </div>
                             <div className='button-submit'>
                                 <button style={{
-                                    cursor: !checked ? 'not-allowed' : 'auto'
+                                    cursor: !checked ? 'not-allowed' : 'pointer'
                                 }} disabled={!checked} type="submit">Send
                                 </button>
                             </div>
