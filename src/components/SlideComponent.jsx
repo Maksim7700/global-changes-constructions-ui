@@ -69,7 +69,7 @@ const SlideComponent = () => {
                 </div>
             </div>
             <div className='side-image'>
-                <img src="./slide-img-1.png" alt="Description" loading="lazy"/>
+                <img src={`./slide-img-${count}.png`} alt="Description" loading="lazy"/>
             </div>
         </div>
     )
