@@ -7,7 +7,7 @@ const Title = () => {
     return (
         <div className='title-content'>
             <div className='title'>{t('main.title')}</div>
-            <div className='title-logo'><img src="./logo.svg" alt="Description" loading="lazy"/></div>
+            <div className='title-logo'><img src="./logo.png" alt="Description" loading="lazy"/></div>
         </div>
     )
 }

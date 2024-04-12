@@ -1,3 +1,4 @@
+
 .container {
     max-width: 1378px;
     margin: 0 auto;
@@ -10,6 +11,12 @@
     height: 78px;
     background: #FFF;
     box-shadow: 0px 0px 10px 0px rgba(157, 157, 157, 0.15);
+}
+
+.title-logo img {
+    width: 241px;
+    height: 85px;
+    flex-shrink: 0;
 }
 
 .nav {
@@ -1047,14 +1054,14 @@ hr {
     }
 
     .title-logo img {
-        width: 109px;
-        height: 74px;
-        flex-shrink: 0;
+        height: 100%;
+        width: 100%;
     }
 
     .title-logo {
+        width: 109px;
         top: 0;
-        right: 0;
+        right: 25px;
     }
 
     .slide-count {
