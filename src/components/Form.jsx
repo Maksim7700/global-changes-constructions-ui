@@ -29,7 +29,7 @@ const Form = () => {
                             </div>
 
                             <div className="description-group">
-                                <textarea placeholder='How can we help you? *' className='form-description' id="description" name="description" rows="4" required></textarea>
+                                <textarea placeholder='How can we help you? *' className='form-description' id="description" name="description" rows="4" required/>
                             </div>
 
                             <div className="form-group-checkbox">
