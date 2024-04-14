@@ -16,7 +16,7 @@ const AboutUs = () => {
                             <div>{t('aboutUs.page1.text')}</div>
                         </div>
                     </div>
-                    <div className='page'>
+                    <div className='page rev'>
                         <div className='page-box'>
                             <div>{t('aboutUs.page2.title')}</div>
                             <div>{t('aboutUs.page2.text')}</div>

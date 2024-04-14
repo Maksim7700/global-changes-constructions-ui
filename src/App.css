@@ -2,7 +2,10 @@
 .container {
     max-width: 1378px;
     margin: 0 auto;
-    letter-spacing: 0.02em;
+}
+
+body {
+    letter-spacing: 0.06em;
 }
 
 .button {
@@ -12,7 +15,9 @@
 /* header start */
 
 .main {
-    flex-shrink: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
     height: 78px;
     background: #FFF;
     box-shadow: 0px 0px 10px 0px rgba(157, 157, 157, 0.15);
@@ -65,7 +70,7 @@
     color: #282828;
     font-size: 16px;
     font-weight: 400;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.06em;
 }
 
 .nav-right button {
@@ -83,7 +88,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
-    letter-spacing: 0.02em;
     text-transform: uppercase;
 }
 
@@ -96,7 +100,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
-    letter-spacing: 0.02em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -248,10 +251,10 @@
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 27px */
-    letter-spacing: 0.02em;
 }
 
 .contact-us button {
+    border: none;
     cursor: pointer;
     width: 197px;
     height: 48px;
@@ -265,7 +268,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 24px */
-    letter-spacing: 0.02em;
     text-transform: uppercase;
 }
 
@@ -287,7 +289,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    letter-spacing: 0.02em;
     text-transform: capitalize;
 }
 
@@ -368,7 +369,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    letter-spacing: 0.02em;
 }
 
 .form-left-description {
@@ -378,7 +378,6 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0.02em;
     text-align: left;
 }
 
@@ -432,7 +431,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 27px */
-    letter-spacing: 0.02em;
     text-transform: capitalize;
 }
 
@@ -477,7 +475,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    letter-spacing: 0.02em;
     margin-bottom: 32px;
 }
 
@@ -514,7 +511,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    letter-spacing: 0.02em;
     text-transform: capitalize;
 }
 
@@ -549,7 +545,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 0.02em;
     text-transform: capitalize;
 }
 
@@ -561,7 +556,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 27px;
-    letter-spacing: 0.02em;
 }
 
 .form-left {
@@ -593,7 +587,7 @@
     border-left: none;
     border-right: none;
     border-bottom:1px solid #E7E7E7;
-    padding-top: 10px;
+    padding-top: 7px;
     padding-left: 16px;
     height: 44px;
     color: black;
@@ -661,7 +655,6 @@ textarea::placeholder {
 .form-description {
     background-color: #F6F6F6;
     height: 110px;
-    flex-shrink: 0;
     color: black;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: 'Montserrat', sans-serif;
@@ -694,7 +687,6 @@ textarea::placeholder {
     font-style: normal;
     font-weight: 400;
     line-height: 27px; /* 168.75% */
-    letter-spacing: 0.02em;
 }
 
 .button-submit {
@@ -710,7 +702,8 @@ button[type="submit"] {
     width: 252px;
     height: 54px;
     flex-shrink: 0;
-    background: #141318;
+    background: #A5A5A5;
+
     color: #FFF;
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -719,11 +712,33 @@ button[type="submit"] {
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 24px */
-    letter-spacing: 0.02em;
     text-transform: uppercase;
 }
 
 /* FOOTER */
+
+.form-left-social-facebook:hover {
+    cursor: pointer;
+}
+
+.form-left-social-linkedin:hover {
+    cursor: pointer;
+}
+
+.form-left-social-instagram:hover {
+    cursor: pointer;
+}
+
+.form-left-social-facebook svg:hover rect {
+    fill: #1877F2;
+}
+
+.form-left-social-linkedin svg:hover rect {
+    fill: #0A66C2;
+}
+.form-left-social-instagram svg:hover circle {
+    fill: #F00073;
+}
 
 .footer {
     margin-bottom: 25px;
@@ -765,7 +780,6 @@ button[type="submit"] {
     font-style: normal;
     font-weight: 400;
     line-height: 27px; /* 192.857% */
-    letter-spacing: 0.02em;
     text-decoration-line: underline;
 }
 
@@ -778,13 +792,19 @@ button[type="submit"] {
     justify-content: right;
 }
 
+.develop-by div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .develop-by img {
     margin-left: 16px;
     margin-right: 10px;
 }
 
 hr {
-    border: 1px solid #D9D9D9;
+    color: #d9d9d9;
 }
 
 
@@ -805,7 +825,6 @@ hr {
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
-        letter-spacing: 0.02em;
         text-align: left
     }
 
@@ -883,7 +902,6 @@ hr {
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
-        letter-spacing: 0.02em;
         text-align: left;
     }
 
@@ -924,7 +942,6 @@ hr {
         font-size: 18px;
         font-weight: 500;
         line-height: 27px;
-        letter-spacing: 0.02em;
         text-align: left;
     }
 
@@ -932,7 +949,6 @@ hr {
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
-        letter-spacing: 0.02em;
         text-align: left;
     }
 
@@ -948,7 +964,6 @@ hr {
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
-        letter-spacing: 0.02em;
         text-align: left;
         padding-right: 0;
         margin-bottom: 16px;
@@ -994,11 +1009,15 @@ hr {
         font-size: 28px;
         font-weight: 500;
         line-height: 34.13px;
-        letter-spacing: 0.02em;
         text-align: left;
     }
 
     .page-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rev .page-box{
         display: flex;
         flex-direction: column-reverse;
     }
@@ -1015,7 +1034,6 @@ hr {
         font-size: 18px;
         font-weight: 400;
         line-height: 27px;
-        letter-spacing: 0.02em;
         text-align: left;
     }
 
@@ -1031,7 +1049,6 @@ hr {
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
-        letter-spacing: 0.02em;
         text-align: left;
     }
 
@@ -1072,7 +1089,6 @@ hr {
         font-style: normal;
         font-weight: 600;
         line-height: 150%; /* 21px */
-        letter-spacing: 0.02em;
         text-transform: uppercase;
     }
 

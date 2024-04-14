@@ -24,7 +24,7 @@ const Footer = () => {
                                 <div><a href='/'>{t('footer.privacyPolicy')}</a></div>
                                 <div><a href='/'>{t('footer.termsOfUse')}</a></div>
                             </div>
-                            <div className='develop-by'>Develop by: <img src="./bigshare.png" alt="Description" loading="lazy"/> BigShare</div>
+                            <div className='develop-by'><div>Develop by:</div> <img src="./bigshare.svg" alt="Description" loading="lazy"/></div>
                         </div>
                     </div>
                 </Container>
