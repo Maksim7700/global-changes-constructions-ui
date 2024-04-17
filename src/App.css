@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .container {
     max-width: 1378px;
@@ -15,6 +16,7 @@ body {
 /* header start */
 
 .main {
+    z-index: 999;
     position: fixed;
     top: 0;
     width: 100%;
@@ -118,7 +120,7 @@ body {
 }
 
 .title {
-    max-width: 685px;
+    max-width: 1022px;
     width: 100%;
     color: #282828;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -408,7 +410,7 @@ body {
 
 .work-process-steps {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 320px));
     gap: 32px;
 }
 
@@ -442,7 +444,6 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
-    letter-spacing: 0.32px;
 }
 
 .work-process-project-in-action {
@@ -803,9 +804,6 @@ button[type="submit"] {
     margin-right: 10px;
 }
 
-hr {
-    color: #d9d9d9;
-}
 
 
 @media (max-width: 1410px) {
@@ -1076,9 +1074,7 @@ hr {
     }
 
     .nav-right button {
-
-        max-width: 121px;
-        width: 100%;
+        width: 121px;
         height: 37px;
         flex-shrink: 0;
         color: var(--Secondary-10, #FFF);
@@ -1087,7 +1083,7 @@ hr {
         font-family: 'Montserrat', sans-serif;
         font-size: 14px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 150%; /* 21px */
         text-transform: uppercase;
     }
@@ -1115,6 +1111,7 @@ hr {
 
     .title-content {
         flex-direction: column-reverse;
+        padding-top: 74px;
     }
 
     .title-logo img {

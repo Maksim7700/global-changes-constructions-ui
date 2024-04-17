@@ -7,7 +7,7 @@ const Footer = () => {
 
     return (
         <>
-            <hr></hr>
+            <hr color='#d9d9d9'></hr>
 
             <div className='footer'>
                 <Container>
