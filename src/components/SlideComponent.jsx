@@ -48,7 +48,7 @@ const SlideComponent = () => {
     }
 
     return (
-        <div className='side-component'>
+        <div className='side-component' data-aos='fade-up' >
             <div className='side-switch'>
                 <button className='slide-left-arrow' onClick={() => decrease()}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="33" height="27" viewBox="0 0 33 27" fill="none">

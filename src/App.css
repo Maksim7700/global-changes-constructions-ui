@@ -297,7 +297,7 @@ body {
 /* AboutUs */
 
 .aboutUs {
-    margin-top: 150px;
+    padding-top: 150px;
     margin-bottom: 150px;
 }
 
@@ -395,7 +395,11 @@ body {
     padding-bottom: 150px;
     display: grid;
     gap: 150px 55px;
-    background: url('../public/black-lines.svg') center/cover no-repeat;
+
+}
+
+.a {
+    background: url('../public/black-lines.svg');
 }
 
 .work-process-title {
@@ -528,7 +532,7 @@ body {
 /* FORM */
 
 .form {
-    margin-top: 150px;
+    padding-top: 150px;
     margin-bottom: 150px;
 }
 
@@ -865,7 +869,7 @@ button[type="submit"] {
     }
 
     .aboutUs {
-        margin-top: 64px;
+        padding-top: 64px;
         margin-bottom: 64px;
     }
 
@@ -987,7 +991,7 @@ button[type="submit"] {
     }
 
     .form {
-        margin-top: 64px;
+        padding-top: 64px;
         margin-bottom: 64px
     }
 

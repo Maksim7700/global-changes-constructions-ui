@@ -6,10 +6,11 @@ const WorkProcess = () => {
     const {t} = useTranslation();
 
     return (
-        <div className='workProcess'>
+        <div id='workProcess' className='workProcess'>
+            <div className='a'>
             <Container className='workProcessContainer'>
-                <div className='work-process-title'>{t('workProcess.title')}</div>
-                <div className='work-process-steps'>
+                <div data-aos='fade-up' className='work-process-title'>{t('workProcess.title')}</div>
+                <div data-aos='fade-up' className='work-process-steps'>
                     <div className='work-process-steps-card'>
                         <div className='work-process-steps-card-step'>{t('workProcess.1.step')}</div>
                         <div className='work-process-steps-card-title'>{t('workProcess.1.title')}</div>
@@ -32,7 +33,7 @@ const WorkProcess = () => {
                     </div>
                 </div>
                 <div className='work-process-project-in-action'>
-                    <div className='work-process-project-in-action-left-box'>
+                    <div data-aos='fade-up' className='work-process-project-in-action-left-box'>
                         <div className='work-process-project-in-action-left-box-title'>{t('workProcess.action.title')}</div>
                         <div className='work-process-project-in-action-left-box-description'>{t('workProcess.action.description')}</div>
                         <div className='work-process-project-in-action-left-box-monitoring'>
@@ -40,13 +41,14 @@ const WorkProcess = () => {
                             <div className='work-process-project-in-action-left-box-monitoring-description'>{t('workProcess.monitoring.description')}</div>
                         </div>
                     </div>
-                    <div className='work-process-project-in-action-video'>
+                    <div data-aos='fade-up' className='work-process-project-in-action-video'>
                         <iframe width="1175" height="661" src="https://www.youtube.com/embed/jhak5jvO-ro" title="OTBx Air - Construction Promo" frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin"
                                 allowFullScreen></iframe>
                     </div>
                 </div>
             </Container>
+            </div>
         </div>
     );
 }

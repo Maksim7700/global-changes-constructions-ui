@@ -1,6 +1,6 @@
 import Container from './default/Container';
 import {useTranslation} from 'react-i18next';
-
+import {Link as Scroll} from 'react-scroll';
 
 const Statistic = () => {
 
@@ -9,12 +9,14 @@ const Statistic = () => {
     return (
         <div className='statistic'>
             <Container>
-                <div className='about-us-container'>
-                    <div className='contact-us'>
+                <div  className='about-us-container'>
+                    <div className='contact-us' data-aos='fade-up' >
                         <div className='about-us-text'>{t('stats.aboutUs')}</div>
+                        <Scroll to='contactUs' spy={true} smooth={true}>
                         <button>{t('stats.button')}</button>
+                        </Scroll>
                     </div>
-                    <div className='stats'>
+                    <div className='stats' data-aos='fade-up' >
                         <div>
                             <div className='stats-value'>{t('stats.stats.one.value')}</div>
                             <div className='stats-text'>{t('stats.stats.one.text')}</div>
