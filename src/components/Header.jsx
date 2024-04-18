@@ -4,13 +4,17 @@ import {Link as Scroll} from 'react-scroll';
 
 const Header = () => {
 
-    const {t} = useTranslation()
+    const {t} = useTranslation();
+
+    function refreshPage() {
+        window.location.reload(false);
+      }
 
     return (
         <div className='main'>
             <Container className='nav'>
                 <div className='nav-left'>
-                    <div className='nav-logo'><img src="./global-changes-construction.png" alt="Description" loading="lazy"/></div>
+                    <div style={{cursor: 'pointer'}} onClick={() => refreshPage()} className='nav-logo'><img src="./global-changes-construction.png" alt="Description" loading="lazy"/></div>
                     <div className='nav-items'>
                         <a href='/'>{t('header.home')}</a>
                         <Scroll to='aboutUs' spy={true} smooth={true}>

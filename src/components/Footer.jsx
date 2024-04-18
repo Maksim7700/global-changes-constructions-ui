@@ -4,6 +4,10 @@ import {Link as Scroll} from 'react-scroll';
 
 const Footer = () => {
 
+    function refreshPage() {
+        window.location.reload(false);
+    }
+
     const {t} = useTranslation()
 
     return (
@@ -13,7 +17,7 @@ const Footer = () => {
             <div className='footer'>
                 <Container>
                     <div className='footer-nav'>
-                        <div className='nav-logo-footer'><img src="./global-changes-construction.png" alt="Description" loading="lazy"/></div>
+                        <div style={{cursor: 'pointer'}} onClick={() => refreshPage()} className='nav-logo-footer'><img src="./global-changes-construction.png" alt="Description" loading="lazy"/></div>
                         <div className='nav-items'>
                         <a href='/'>{t('header.home')}</a>
                         <Scroll to='aboutUs' spy={true} smooth={true}>
