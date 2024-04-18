@@ -1,5 +1,6 @@
 import Container from './default/Container';
 import {useTranslation} from 'react-i18next'
+import {Link as Scroll} from 'react-scroll';
 
 const Footer = () => {
 
@@ -14,10 +15,16 @@ const Footer = () => {
                     <div className='footer-nav'>
                         <div className='nav-logo-footer'><img src="./global-changes-construction.png" alt="Description" loading="lazy"/></div>
                         <div className='nav-items'>
-                            <a href='/'>{t('footer.home')}</a>
-                            <a href='/'>{t('footer.aboutUs')}</a>
-                            <a href='/'>{t('footer.workProcess')}</a>
-                            <a href='/'>{t('footer.contactUs')}</a>
+                        <a href='/'>{t('header.home')}</a>
+                        <Scroll to='aboutUs' spy={true} smooth={true}>
+                        <a href='/'>{t('header.aboutUs')}</a>
+                        </Scroll>
+                        <Scroll to='workProcess' spy={true} smooth={true}>
+                        <a href='/'>{t('header.workProcess')}</a>
+                        </Scroll>
+                        <Scroll to='contactUs' spy={true} smooth={true}>
+                        <a href='/'>{t('header.contactUs')}</a>
+                        </Scroll>
                         </div>
                         <div className='info'>
                             <div className='terms-block'>
