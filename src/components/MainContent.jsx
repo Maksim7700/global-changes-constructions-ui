@@ -5,6 +5,10 @@ import Container from './default/Container';
 const MainContent = () => {
     return (
         <div className='main-content'>
+            <a href=" " className="btn-whatsapp-pulse">
+                <img src='./whatsapp.svg' alt='WhatsApp'/>
+            </a>
+
             <Container>
                 <Title/>
                 <SlideComponent/>
