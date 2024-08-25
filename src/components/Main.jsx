@@ -1,32 +1,25 @@
-import { useEffect } from 'react';
 import AboutUs from './AboutUs';
 import Footer from './Footer';
 import Form from './Form';
-import Header from './Header';
 import MainContent from './MainContent';
 import Statistic from './Statistic';
 import WorkProcess from './WorkProcess';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
-const Main = () => {
+const components = [
+    MainContent,
+    Statistic,
+    AboutUs,
+    WorkProcess,
+    Form,
+    Footer,
+];
 
-
-    useEffect(() => {
-        AOS.init();
-    },[])
-
-    return (
-        <>
-            <Header/>
-            <MainContent/>
-            <Statistic/>
-            <AboutUs/>
-            <WorkProcess/>
-            <Form/>
-            <Footer/>
-        </>
-    )
-}
+const Main = () => (
+    <>
+        {components.map((Component, index) => (
+            <Component key={index} />
+        ))}
+    </>
+);
 
 export default Main;

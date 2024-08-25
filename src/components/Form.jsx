@@ -9,20 +9,16 @@ const Form = () => {
     const [checked, setChecked] = useState(false);
 
     return (
-        <div id='contactUs' data-aos='fade-up' className='form'>
+        <div id='contactUs'  className='form'>
             <Container>
                 <div className='form-container'>
                     <div className='form-left'>
                         <div className='form-left-title'>{t('form.title')}</div>
                         <div className='form-left-description'>{t('form.description')}</div>
+                        <div className='in'>
+                        <div className='street'>London, Loyan str.</div>
+                        <div className='mail'>mail@gmail.com</div>
                         <div className='form-left-social'>
-                            <div className='form-left-social-facebook'>
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="32" height="32" rx="16" fill="#CACACA"/>
-<path d="M22.2281 20.625L22.9375 16H18.5V13C18.5 11.7344 19.1188 10.5 21.1063 10.5H23.125V6.5625C23.125 6.5625 21.2938 6.25 19.5438 6.25C15.8875 6.25 13.5 8.46563 13.5 12.475V16H9.4375V20.625H13.5V31.8062C14.3156 31.9344 15.15 32 16 32C16.85 32 17.6844 31.9344 18.5 31.8062V20.625H22.2281Z" fill="white"/>
-</svg>
-
-                            </div>
                             <div className='form-left-social-linkedin'>
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="32" height="32" rx="16" fill="#CACACA"/>
@@ -44,6 +40,7 @@ const Form = () => {
 <path d="M16 10.8193C13.1084 10.8193 10.8193 13.1084 10.8193 16C10.8193 18.8916 13.1084 21.1807 16 21.1807C18.8916 21.1807 21.1807 18.8916 21.1807 16C21.1807 13.1084 18.8916 10.8193 16 10.8193ZM16 19.3735C14.1928 19.3735 12.6265 17.9277 12.6265 16C12.6265 14.1928 14.0723 12.6265 16 12.6265C17.8072 12.6265 19.3735 14.0723 19.3735 16C19.3735 17.8072 17.8072 19.3735 16 19.3735Z" fill="white"/>
 <path d="M21.3012 11.9036C21.9666 11.9036 22.506 11.3642 22.506 10.6988C22.506 10.0334 21.9666 9.49398 21.3012 9.49398C20.6358 9.49398 20.0964 10.0334 20.0964 10.6988C20.0964 11.3642 20.6358 11.9036 21.3012 11.9036Z" fill="white"/>
 </svg>
+</div>
 
 
                             </div>
@@ -65,10 +62,7 @@ const Form = () => {
                                 <label htmlFor="checkbox">{t('form.form.checkbox')}</label>
                             </div>
                             <div className='button-submit'>
-                                <button style={{
-                                    cursor: !checked ? 'not-allowed' : 'pointer',
-                                    backgroundColor: !checked ? '#A5A5A5' : '#141318'
-                                }} disabled={!checked} type="submit">Send
+                                <button type="submit">Send
                                 </button>
                             </div>
                         </form>

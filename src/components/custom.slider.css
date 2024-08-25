@@ -11,6 +11,13 @@
   background-color: black;
 }
 
+.container__slider img {
+  max-width: 1378px;
+  max-height: 689px;
+  width: 100%;
+  height: 100%;
+}
+
 .container__slider > button {
   background-color: transparent;
   outline: none;
@@ -81,23 +88,9 @@
   transform: translateX(-200%);
 }
 
-.slider__item-active-4 {
-  transform: translateX(-300%);
-}
-
-.slider__item-active-5 {
-  transform: translateX(-300%);
-}
-
-.slider__item-active-6 {
-  transform: translateX(-300%);
-}
-
-.slider__item-active-7 {
-  transform: translateX(-300%);
-}
-
 .slider__item img {
+  max-width: 1378px;
+  max-height: 689px;
   width: 100%;
   height: auto;
 }
