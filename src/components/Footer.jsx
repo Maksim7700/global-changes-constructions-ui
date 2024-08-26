@@ -28,7 +28,7 @@ const Footer = () => {
                                 loading="lazy"
                             />
                         </div>
-                        <div className='nav-items'>
+                        <div className='nav-items footer-nav-items'>
                             <a href='/' target='_blank' rel="noreferrer">
                                 {t('header.home')}
                             </a>
